@@ -2,10 +2,17 @@ var diameter;
 var Counter = 0;
 H = 600;
 W = 600
+
+var img;
+function preload() {
+  img = loadImage ('Saif.jpg');
+}
 function setup() {
+  image(img, 0, 0);
+  
   angleMode(DEGREES);
-  //colorMode(HSB,80,100,100)
-  createCanvas(700, 500);
+ // colorMode(HSB,80,100,100)
+ // createCanvas(700, 500);
   frameRate(20)
   noStroke();
  
@@ -13,7 +20,7 @@ function setup() {
 }
 
 function draw() {
-  //background(0);
+ // background(0);
   fill(255,255,255,10)
   rect(0,0,width, height)
   textSize(18);
